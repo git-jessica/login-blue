@@ -1,0 +1,200 @@
+@charset "utf-8";
+/*=========================Reset_start==========================*/
+body, ul, ol, li, p, h1, h2, h3, h4, h5, h6, form, fieldset, table, td, img, div, dl, dt, dd, input {
+    margin: 0;
+    padding: 0;
+}
+/*转屏字体设置*/
+html, body, form, fieldset, p, div, h1, h2, h3, h4, h5, h6 { -webkit-text-size-adjust:100%;}
+html,body{
+	width:100%;
+	height: 100%;
+    margin: 0 auto;
+    padding: 0px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+}
+html{
+	font-size: 62.5%;
+}
+body{
+	display: flex;
+	display: -webkit-flex;
+	-webkit-flex-direction:column;
+	flex-direction: column;
+	background: #FFFFFF;
+}
+@media only screen and (min-width: 481px){
+	html {
+		font-size: 94%!important;
+	}
+}
+@media only screen and (min-width: 561px){
+	html {
+		font-size: 109%!important;
+	}
+
+}
+@media only screen and (min-width: 641px){
+	html {
+		font-size: 125%!important;
+	}
+}
+a{text-decoration:none!important; -webkit-tap-highlight-color:rgba(0,0,0,0);}
+img{border:none;}
+textarea{resize:none;}
+table{border-collapse: collapse; border-spacing: 0;}
+ul,li,dl{list-style:none;}
+h1,h2,h3,h4,h5,h6,b,strong{font-weight:normal;}
+i,em{font-style:normal;}
+input{border:none;outline: none;}
+.left{
+	float: left;
+}
+.right{
+	float: right;
+}
+.clear{clear:both!important;}
+.clearfix:after{
+	content:"";
+	display: block;
+	height:0;
+	overflow: hidden;
+	clear: both;
+	visibility: hidden;
+}
+.clearfix{
+	zoom:1;
+}
+/*==========================Reset_End===========================*/
+/*头部样式开始*/
+.head{
+	width: 100%;
+	height:4.5rem;
+	line-height: 4.5rem;
+	background: #FFFFFF!important;
+	text-align: center;
+	font-size: 1.9rem;
+	border-bottom: 1px solid #ccc;
+	margin:0;
+	padding:0 5rem 0 -5rem;
+	z-index: 99;
+}
+.back{
+	display: inline-block;
+	position: absolute;
+	left: 1.5rem;
+	color: #666;
+}
+.title{
+	display: inline-block;
+	text-align: center;
+	word-break:keep-all;           /* 不换行 */
+	white-space:nowrap;          /* 不换行 */
+	overflow:hidden;               /* 内容超出宽度时隐藏超出部分的内容 */
+	text-overflow:ellipsis; 
+}
+.head img{
+	height: 1.5rem;
+	position: absolute;
+	left: 0;
+	top:0;
+	right:0;
+	bottom: 0;
+	margin: auto 0;
+}
+.head i{
+	font-size: 1.5rem;
+	margin-left: 1.4rem;
+}
+.head_bottom{
+	height:4.5rem;
+	clear: both;
+	margin-bottom: 1.0rem;
+}
+/*内容部分*/
+.main-content-box{
+	width: 100%;
+	height: 100%;
+	-webkit-overflow-scrolling: touch;
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+/*头部样式结束*/
+input[type="radio"]{
+	outline: none;
+	resize: none;
+}
+
+/*遮罩层样式*/
+.show_toast{
+	display: none;
+}
+.shade{
+	height:100%;
+	width:100%; 
+	position:fixed; 
+	_position:absolute; 
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	background:#000;
+	opacity:0.7;
+	filter: alpha(opacity=70);
+	z-index: 999;
+}
+/*横屏显示*/
+.point_toast{
+	width: 50%;
+	height: 4.0rem;
+	line-height: 4.0rem;
+	text-align: center;
+	font-size: 1.5rem;
+	border-radius: 5px;
+	background: #666;
+	color: #FFFFFF;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	display: none;
+}
+
+/*toast弹窗显示*/
+.outerToast{                          
+	position: fixed;                 
+	left: 0;                         
+	top: 0;                          
+	width: 100%;                     
+    height: 100%;                    
+    overflow: hidden;                  
+    display: none;  
+    z-index: 9999;
+}                                     
+.innerToast{                          
+    position: absolute;               
+    bottom: 150px;
+    min-width: 90%;                     
+    padding: 20px 20px 20px 20px;                   
+    height: auto;                     
+    min-height: 2.5rem;                 
+    _height:2.5rem;                     
+    text-align: center;               
+}                                     
+.toast{                              
+	display: inline-block;           
+	width: auto;                     
+	word-break: break-word;          
+	white-space: pre-wrap;           
+	background: #1A1A1A;              
+	opacity: 0.7;                     
+	filter: alpha(opacity=70);    
+	font-size: 1.5rem;    
+	color: #FFFFFF;                   
+	padding: 8px;                     
+	border-radius: 3px;               
+	text-align: left;                
+}

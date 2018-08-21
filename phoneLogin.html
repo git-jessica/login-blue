@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>登录11</title>
+    <!-- 公共CSS -->
+    <link rel="stylesheet" type="text/css" href="css/common.css" />
+    <!-- 我的养生铺CSS-->
+    <link rel="stylesheet" type="text/css" href="css/phoneLogin.css">
+</head>
+<body>
+<div class="outerBox">
+    <div class="phone">
+        <input type="tel" placeholder="手机号" maxlength="11" id="phone-num">
+    </div>
+    <div class="code">
+        <input type="text" placeholder="请输入验证码" id="verifi-code">
+        <input type="button" class="verify_code" value="获取验证码" disabled="disabled">
+    </div>
+
+    <a class="phone-login" href="javascript:void(0)">提&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;交</a>
+
+
+
+    <!--弹窗部分开始-->
+    <div class="outerToast" id="toast_div">
+        <div class="innerToast">
+            <span class="toast" id="showToast"></span>
+        </div>
+    </div>
+</div>
+<!--弹窗部分结束-->
+<script src="js/jquery.min.js"></script>
+<!-- 我的养生铺js -->
+<script src="js/phoneLogin.js"></script>
+</body>
+</html>
